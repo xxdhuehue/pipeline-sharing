@@ -11,7 +11,7 @@ pipeline {
         stage('init') {
             steps {
                 echo 'pull the latest code...'
-                git url: ${GIT_REPO}, branch: ${GIT_BRANCH}
+                git url: 'git@github.com:xxdhuehue/pipeline-sharing.git', branch: 'develop'
             }
         }
         stage('install dependencies and bundle') {
