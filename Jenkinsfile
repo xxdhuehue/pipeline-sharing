@@ -18,7 +18,7 @@ pipeline {
             steps {
                 echo 'install dependencies and bundle...'
                 sh '''
-                    nvm use ${NODE_VERSION}
+                    nvm use 22
                     pnpm install
                     pnpm run build
                 '''
